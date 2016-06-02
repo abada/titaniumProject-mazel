@@ -1,0 +1,39 @@
+<Alloy>
+    <ScrollView>
+        <ImageView id="mazelLogo" class="mT"/>
+
+        <View class="mT verticalWrapper">
+            <Widget src="com.mazel.tile" id="loginUsername" contentType="input" autocorrect="false" hint="L('signup_username_hint')" image="/images/ico_user.png" />
+            <Widget src="com.mazel.tile" id="loginPassword" contentType="password" autocorrect="false" hint="L('signup_password_hint')" image="/images/ico_password.png" onReturn="onLogin"/>
+            <Widget src="com.mazel.tile" contentType="custom" height="120dp">
+                <View class="verticalWrapper">
+                    <Button module="mazel" onClick="onLogin" title="L('btn_login')" />
+                    <View class="horizontalWrapper msTB" onClick="onForgotPassword">
+                        <Label text="L('btn_password_reset')" />
+                        <ImageView image="/images/ico_arrow_right_grey.png" left="5dp" />
+                    </View>
+                    <View class="horizontalWrapper msB" >
+                        <Label text="L('or')" />
+                    </View>
+                </View>
+            </Widget>
+            <Widget src="com.mazel.tile" contentType="custom" >
+                <Button module="mazel" type="facebook" title="L('btn_login_facebook')" onClick="onLoginFacebook" />
+            </Widget>
+        </View>
+
+    </ScrollView>
+
+     <Widget src="com.mazel.customDialog" id="emailDialog" title="L('reset_email_dialog_title')" cancel="0" buttons="btn_cancel,btn_done" zIndex="900">
+
+        <Widget id="resetMessageArea" src="com.mazel.messageArea" />
+         <View class="verticalWrapper mLR">
+             <Label text="L('reset_email_dialog_text')" />
+             <!-- <TextField id="resetEmail" class="" hint="L('signup_email_hint')" keyboardType="Titanium.UI.KEYBOARD_EMAIL" /> -->
+            <Widget src="com.mazel.tile" id="resetEmail" contentType="email" hint="L('signup_email_hint')" image="/images/ico_email.png" />
+         </View>
+        <!-- <Widget src="com.mazel.activityIndicator" id="resetActivityIndicator" /> -->
+    </Widget>
+
+
+</Alloy>

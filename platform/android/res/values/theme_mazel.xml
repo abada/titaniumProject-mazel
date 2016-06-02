@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Mazel" parent="@style/Theme.AppCompat">
+        <item name="colorPrimary">#333333</item>
+        <item name="colorAccent">#ff0b41</item>
+                
+        <item name="android:textColorHint">#999</item>
+        
+    </style>
+    
+</resources>

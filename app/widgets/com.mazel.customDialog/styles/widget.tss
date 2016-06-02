@@ -1,0 +1,6 @@
+'#view':{
+    width: 0, height: 0, visible: false, opacity: 0,
+}
+'#dummy':{
+    width: 0, height: 0, visible: false, opacity: 0,
+}

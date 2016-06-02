@@ -1,0 +1,64 @@
+
+"#infoBoxWrapper":{
+    height: "50%",
+    width: "50%",
+}
+"#infoBoxWrapper[platform=ios]":{
+    width: "49.99%",	
+}
+
+"#infoBox":{
+    borderWidth: "1dp",
+    borderColor: '#fff',
+    borderRadius: "2dp",
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL,
+}
+'#infoBox[platform=android]':{
+    overrideCurrentAnimation: true,
+}
+".infoBoxTL":{
+    left: "4dp",
+    top: "4dp",
+    right: "2dp",
+    bottom: "2dp",
+}
+".infoBoxTR":{
+    left: "2dp",
+    top: "4dp",
+    right: "4dp",
+    bottom: "2dp",
+}
+".infoBoxBR":{
+    left: "2dp",
+    top: "2dp",
+    right: "4dp",
+    bottom: "4dp",
+}
+".infoBoxBL":{
+    left: "4dp",
+    top: "2dp",
+    right: "2dp",
+    bottom: "4dp",
+}
+
+".infoBoxLabelWrapper":{
+	// layout: "horizontal",
+    // width: Ti.UI.FILL,	
+    height: Ti.UI.FILL,	
+    left: "4dp",
+    top: "4dp",
+    right: "4dp",
+    bottom: "4dp",
+}
+".infoBoxLabel":{
+    left: "40dp",
+    color: '#fff',
+    font:{
+        fontSize: "15dp"
+    },
+    visible: false,
+}
+".infoBoxIco":{
+    // opacity: 0.3,
+}

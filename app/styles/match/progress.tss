@@ -1,0 +1,165 @@
+"#mainView":{
+    height: Ti.UI.FILL,
+    width: Ti.UI.FILL,
+}
+
+/*
+ * HEADER
+ */
+
+".flirtHeaderWrapper":{
+	
+}
+"#flirtHeader":{
+	backgroundColor: Alloy.Globals.Color.tabBarBackground,
+     width:Ti.UI.SIZE,
+     height:Ti.UI.SIZE,
+}
+
+".avatarWrapper":{
+     width:Ti.UI.SIZE,
+     height:Ti.UI.SIZE,
+     top: "25dp",     
+}
+"#avatarBg":{
+    backgroundColor: '#fff',
+    width: "50dp",
+    height: "50dp",
+    borderRadius: "25dp",
+    bottom: 0,
+}
+"#avatarBorder":{
+     width:Ti.UI.SIZE,
+     height:Ti.UI.SIZE,
+}
+"#avatarImage":{
+    top: "4dp",
+    left: "4dp",
+    right: "4dp",
+    bottom: "4dp",
+     width:Ti.UI.SIZE,
+     height:Ti.UI.SIZE,
+}
+
+".revealTitleWrapper":{
+	left: "90dp",
+}
+
+/*
+ * INFO BOXES
+ */
+"#infoBoxWrapper":{
+	height: 0,
+	bottom: 0,
+	top: 0,
+	backgroundColor: Alloy.Globals.Color.tabBarBackground,
+	width: Titanium.UI.FILL,
+}
+
+/*
+ * BUTTONS
+ */
+
+'.gameButtonContainer':{
+	top: 0,
+	bottom: 0,
+	height: Ti.UI.FILL,
+	layout: "vertical",
+}
+
+'.gameButtonWrapper':{
+	width: Titanium.UI.FILL,
+	height: "50%",
+}
+'.gameButton':{
+	top: '2dp',
+	backgroundColor: "#dfff",
+	height: Titanium.UI.FILL,
+}
+'.gameButtonSeperator':{
+	backgroundColor: Alloy.Globals.Color.tabBarBackground,
+	top: "5dp",
+	bottom: "5dp",
+	height: "1dp",
+	width: "50%",
+}
+".gameButtonArrow":{
+	image: "/images/ico_arrow_right_grey.png",
+}
+
+"#chatButton":{
+	height: 0,
+}
+
+".gameButtonLabel":{
+	font:{
+        fontSize: '15dp',
+        fontFamily: 'Arapey-Regular',
+    },
+}
+
+
+/*
+ * MATCH OVERLAY
+ */
+
+"#matchOverlay":{
+    height: Ti.UI.FILL,
+    width: Ti.UI.FILL,
+    // backgroundColor: "#8fff",
+    // opacity: 0,
+}
+
+
+
+/*
+ * REVEAL OVERLAY
+ */
+
+"#revealOverlay":{
+    height: Ti.UI.FILL,
+    width: Ti.UI.FILL,
+    backgroundColor: "#8fff",
+    opacity: 0,
+    touchEnabled: false,
+}
+".revealOverlayWrapper":{
+    height: Ti.UI.SIZE,
+    width: Ti.UI.FILL,
+    touchEnabled: false,
+}
+".revealOverlayUnlockIconWrapper":{
+	top: 0,
+    backgroundColor: "#fff",
+    height: "60dp",
+    width: "60dp",
+    borderRadius: "30dp",
+    zIndex: 1,
+    touchEnabled: false,
+}
+".revealOverlayContentContainer":{
+    height: Ti.UI.SIZE,
+    width: Ti.UI.FILL,
+	backgroundColor: Alloy.Globals.Color.tabBarBackground,	
+	top: "30dp",
+    touchEnabled: false,
+}
+
+".revealOverlayLabel":{
+	top: "3dp",
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER,
+}
+".revealOverlayTitle":{
+	top: 0,
+}
+
+".revealOverlayInfoBox":{
+	layout: "vertical",
+    height: Ti.UI.SIZE,
+	width: "25%",
+	top: 0,
+    touchEnabled: false,
+}
+".revealOverlayInfoBox[platform=ios]":{
+	width: "24.99%",
+}

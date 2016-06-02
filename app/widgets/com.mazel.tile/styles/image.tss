@@ -1,0 +1,17 @@
+'#wrapper':{
+    width : Ti.UI.FILL,
+    height: Titanium.UI.SIZE,
+    layout: 'vertical',
+}
+
+'#image': {
+    width : Ti.UI.SIZE,
+    height : Ti.UI.SIZE,
+}
+
+'#label': {    
+    color : Alloy.Globals.Color.hintFont,
+    width : Ti.UI.SIZE,
+    height : Ti.UI.SIZE,
+    top : '5dp',
+}

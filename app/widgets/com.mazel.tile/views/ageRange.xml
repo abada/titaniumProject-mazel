@@ -1,0 +1,20 @@
+<Alloy>
+    <View id="wrapper">
+        <TextField id="text" class="tileInput" />
+        <Widget src="com.mazel.customDialog" id="ageRangeDialog" cancel="0" buttons="btn_cancel,btn_done">
+            <View class="mLR" layout="vertical" height="Ti.UI.SIZE" >
+                <View class="horizontalWrapper">
+                	<ImageView image="/images/ico_age_range.png" />
+                    <Label text="L('age_picker_title')" class="msL ageRangeLabel" />
+                    <!-- <Label width="49.99%" text="L('age_picker_from')" textAlign="center"/> -->
+                    <!-- <Label width="49.99%" text="L('age_picker_to')" textAlign="center"/> -->
+                </View>
+                <View id="hook" height="Ti.UI.SIZE" width="200dp" class="mT">
+                    <View class="toLabelWrapper"><Label class="toLabel ageRangeLabel msLR" text="L('age_picker_to')" /></View>
+                	<View class="centerMarker" />
+                </View>
+                <Label text="L('age_picker_years')" class="ageRangeLabel msT"/>
+            </View>
+        </Widget>
+    </View>
+</Alloy>

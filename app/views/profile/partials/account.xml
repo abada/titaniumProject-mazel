@@ -1,0 +1,13 @@
+<Alloy>
+    <View class="verticalWrapper" >
+        <View class="verticalWrapper sectionTitleWrapper">
+            <Label text="L('profile_account_details')" class="mLR sectionTitle" />
+            <Label text="L('profile_account_details_subtitle')" class="mLR mB sectionTitleSubtitle" />
+        </View>
+        <View class="verticalWrapper">
+            <Widget src="com.mazel.tile" id="username" contentType="input" autocorrect="false" hint="L('signup_username_hint')" image="/images/ico_user.png" />
+            <Widget src="com.mazel.tile" id="email" contentType="email" autocorrect="false" hint="L('signup_email_hint')" image="/images/ico_email.png" />
+            <Widget src="com.mazel.tile" id="password" contentType="password" autocorrect="false" hint="L('signup_password_hint')" image="/images/ico_password.png" />
+        </View>
+    </View>
+</Alloy>

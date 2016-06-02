@@ -1,0 +1,27 @@
+<Alloy>
+    <View id="tabs" >
+        <Widget id="messageArea" src="com.mazel.messageArea" />
+        <View id="loginTab" class="tab">
+            <Require onMessage="onMessage" src="login/partials/loginTab" />
+        </View>
+        <View id="signupTab" class="tab" visible="false" >
+            <Require id="signup" onMessage="onMessage" src="login/partials/signupTab" />
+        </View>
+        <View id="tabBar" >
+            <View id="tabBarArrowContainer">
+                <View id="tabBarArrowWrapper">
+                    <ImageView  id="tabBarArrow"/>
+                </View>
+            </View>
+            <View id="tabBarButtonContainer"> 
+                <View class="tabBarButtonWrapper mTB">
+                    <Button id="tabBarLoginButton" class="tabBarButton mLR" onClick="onShowLoginTab" >login</Button>
+                </View>
+                <View class="tabBarButtonWrapper mTB">
+                    <Button id="tabBarSignupButton" class="tabBarButton mLR" onClick="onShowSignupTab" >signup</Button>
+                </View>
+            </View>
+        </View>
+        <Widget src="com.mazel.activityIndicator" id="activityIndicator" />
+    </View>
+</Alloy>

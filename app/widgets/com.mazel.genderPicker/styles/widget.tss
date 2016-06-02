@@ -1,0 +1,9 @@
+'#wrapper':{
+    height: Titanium.UI.SIZE,
+    layout: 'vertical',
+}
+'#text':{
+    hintText: L('signup_gender_hint'),
+    editable: false,
+    // focusable: false,
+}

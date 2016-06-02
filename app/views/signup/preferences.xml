@@ -1,0 +1,14 @@
+<Alloy>
+    <Window onAndroid:back="onBeforeClose">
+
+        <!-- we need our own back button here to ba able to listen on beforeClose events -->
+        <Require platform="ios" src="partials/navBackButton" title="L('btn_cancel')" onBeforeClose="onBeforeClose" /> 
+        <Require platform="ios" src="partials/navSaveButton"  onClick="onSavePreferences" />
+        <ActionBar platform="android" id="actionbar" onHomeIconItemSelected="onBeforeClose" />
+        <Menu platform="android">
+            <MenuItem id="actionbarSave" title="Save" onClick="onSavePreferences" />
+        </Menu>
+        <Require id="flirtPreferencesPart" type="view" src="profile/partials/flirtPreferences" onSuccess="onSuccess"/>
+
+    </Window>
+</Alloy>

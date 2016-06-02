@@ -1,0 +1,16 @@
+{
+	"id": "com.mazel.tile",
+	"name": "",
+	"description" : "",
+	"author": "Simon Mang",
+	"version": "0.0.1",
+	"copyright":"",
+	"license":"",
+	"min-alloy-version": "1.5",
+	"min-titanium-version":"3.4",
+	"tags":"",
+	"platforms":"ios,android",	
+    "dependencies": {
+       "com.mazel.customDialog":"0.0.1"
+    }
+}

@@ -1,0 +1,9 @@
+<Alloy>
+   <RightNavButton>
+      <View layout="horizontal">
+          <!--<ImageView image="/images/ico_arrow_left_white.png">         
+          <Label class="navButtonLabel" text="L('back')" />-->
+          <Button title="save" onClick="onClick"  />         
+      </View>
+   </RightNavButton>
+</Alloy>

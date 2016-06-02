@@ -1,0 +1,332 @@
+/*
+
+This is your global styles file. Selectors and rules you define
+here will be applied throughout your app. However, these rules
+have the lowest priority of any style settings.
+
+For more information, see the "Style Priorities" section of
+http://docs.appcelerator.com/titanium/latest/#!/guide/Alloy_Styles_and_Themes
+
+For example, the following would apply to all labels, windows,
+and text fields (depending on platform) in your app unless you
+overrode the settings with other TSS, XML, or JS settings:
+
+'Label[platform=android]': {
+	color: '#000' // all platforms except Android default to black
+}
+
+'Window': {
+	backgroundColor: '#fff' // white background instead of default transparent
+}
+
+'TextField[platform=android]': {
+	height: Ti.UI.SIZE //
+}
+
+*/
+
+
+/*
+ * GENERAL STYLES
+ * for global elements
+ */
+
+'Window': {
+    // theme: 'Theme.Mazel',
+	backgroundColor: '#fff', // white background instead of default transparent
+	color: Alloy.Globals.Color.mainFont,
+	title: L('mazel')
+}
+'Window[platform=android]': {
+    windowSoftInputMode: Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN,
+}
+'Window[platform=ios]': {
+    statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+    barColor: Alloy.Globals.Color.navBarBackground,
+    navTintColor: Alloy.Globals.Color.navBarFont,
+    titleAttributes:  {
+        color:Alloy.Globals.Color.navBarFont,
+    },
+}
+
+'Label': {
+	color: Alloy.Globals.Color.mainFont, // all platforms except Android default to black
+	height: Titanium.UI.SIZE,// at least on iOS (invisible) labels would grow to Ti.UI.FILL instead
+}
+
+// global scrollview style
+'ScrollView':{
+    layout: 'vertical',
+    showHorizontalScrollIndicator: false,
+    showVerticalScrollIndicator: true,
+}
+'ScrollView[platform=android]':{
+    scrollType: 'vertical',
+}
+
+
+/*
+ * GENERAL FORM ELEMENT STYLES
+ */
+'Picker':{
+	width: Ti.UI.FILL,
+	height: '50dp',
+}
+
+/*
+ * GLOBAL CLASSES / IDs
+ */
+
+// for ImageViewn (currently only used in login/signup tabs)
+'#mazelLogo':{
+    image: '/images/logo_splash.png',
+    height: "50dp",//scale down, original height would be 60dp 
+}
+
+// wrapper around vertically stacked elements
+'.verticalWrapper':{
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: 'vertical'
+}
+// wrapper around horizontally stacked elements
+'.horizontalWrapper':{
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    layout: 'horizontal'
+}
+
+'.sectionTitleWrapper':{
+    backgroundColor: Alloy.Globals.Color.tabBarBackground,
+    width: Ti.UI.FILL,
+}
+'.sectionTitle':{
+    top: '50dp',
+    font:{
+        fontSize: '25dp',
+        fontFamily: 'Arapey-Regular',
+    },
+    color: Alloy.Globals.Color.tabBarButtonFont,
+    touchEnabled: false,// disable event capturing on Android (if class is used in popups etc.)
+}
+'.sectionTitleSubtitle':{
+    font:{
+        fontSize: '15dp',
+        fontFamily: 'Arapey-Regular',
+    },
+    color: Alloy.Globals.Color.tabBarButtonFont,
+    opacity: 0.8,
+    touchEnabled: false,// disable event capturing on Android (if class is used in popups etc.)
+}
+
+'.bigLabel':{
+    font:{
+        fontSize: '20dp'
+    }
+}
+
+'.mainTabTopSeparator':{
+    height: '1dp',
+    width: Titanium.UI.FILL,
+    backgroundColor: Alloy.Globals.Color.magenta,
+    top: 0,
+}
+
+'.mainTabScrollview[platform=android]':{
+    top: '1dp',
+}
+
+/*
+ * TABLE CLASSES
+ */
+// for wrapping tr content
+// '.tableViewRowContent':{
+'.tableView':{
+    height: Ti.UI.SIZE,
+    layout: 'vertical',
+}
+'.tableViewRow':{
+    height: Ti.UI.SIZE,
+    layout: 'vertical',
+}
+
+// for all formular / input tables
+'.formTable':{
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE,
+    separatorColor: Alloy.Globals.Color.tableSeparator,
+    borderColor: Alloy.Globals.Color.tableSeparator,
+    borderWidth: '1dp',
+    //hide left border
+    left: '-1dp',
+    // hide right border
+    right: '-1dp',
+}
+// '.formTable[platform=ios]':{
+    // scrollable: false,
+// }
+// '.formTable[platform=android]':{
+    // overScrollMode: Titanium.UI.Android.OVER_SCROLL_NEVER,
+// }
+
+// margin classes
+'.mT':{top:Alloy.Globals.Layout.globalMarginTop}
+'.mR':{right:Alloy.Globals.Layout.globalMarginRight}
+'.mB':{bottom:Alloy.Globals.Layout.globalMarginBottom}
+'.mL':{left:Alloy.Globals.Layout.globalMarginLeft}
+'.mTB':{top:Alloy.Globals.Layout.globalMarginTop, bottom: Alloy.Globals.Layout.globalMarginBottom}
+'.mLR':{left:Alloy.Globals.Layout.globalMarginLeft, right: Alloy.Globals.Layout.globalMarginRight}
+
+// small margin
+'.msT':{top:Alloy.Globals.Layout.globalMarginTopSmall}
+'.msR':{right:Alloy.Globals.Layout.globalMarginRightSmall}
+'.msB':{bottom:Alloy.Globals.Layout.globalMarginBottomSmall}
+'.msL':{left:Alloy.Globals.Layout.globalMarginLeftSmall}
+'.msTB':{top:Alloy.Globals.Layout.globalMarginTopSmall, bottom: Alloy.Globals.Layout.globalMarginBottomSmall}
+'.msLR':{left:Alloy.Globals.Layout.globalMarginLeftSmall, right: Alloy.Globals.Layout.globalMarginRightSmall}
+
+// large margin
+'.mlT':{top:Alloy.Globals.Layout.globalMarginTopLarge}
+'.mlR':{right:Alloy.Globals.Layout.globalMarginRightLarge}
+'.mlB':{bottom:Alloy.Globals.Layout.globalMarginBottomLarge}
+'.mlL':{left:Alloy.Globals.Layout.globalMarginLeftLarge}
+'.mlTB':{top:Alloy.Globals.Layout.globalMarginTopLarge, bottom: Alloy.Globals.Layout.globalMarginBottomLarge}
+'.mlLR':{left:Alloy.Globals.Layout.globalMarginLeftLarge, right: Alloy.Globals.Layout.globalMarginRightLarge}
+
+/*
+ * BUTTON STYLES
+ */
+'.buttonWrapper':{
+    // width: Ti.UI.SIZE,
+    height: '50dp',
+}
+'.buttonOverlay':{
+    width: Ti.UI.FILL,
+    height: '50%',
+    top: 0,
+    backgroundColor: Alloy.Globals.Color.buttonOverlayBackground,
+}
+'.button':{
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL,
+    color: Alloy.Globals.Color.buttonFont,
+    backgroundColor: Alloy.Globals.Color.buttonBackground,
+    // backgroundSelectedColor: Alloy.Globals.Color.buttonSelectedBackground,
+    borderRadius: Alloy.Globals.Layout.buttonBorderRadius,
+    borderWidth: '1dp',
+    borderColor: Alloy.Globals.Color.buttonBackground,
+}
+'.facebookButton':{
+    backgroundColor: Alloy.Globals.Color.buttonFacebookBackground,
+    // backgroundSelectedColor: Alloy.Globals.Color.buttonFacebookSelectedBackground,
+    borderColor: Alloy.Globals.Color.buttonFacebookBackground,
+}
+
+
+/*
+ * DIALOG STYLE
+ */
+'.dialogButtonRow':{
+    backgroundColor: Alloy.Globals.Color.tabBarBackground,
+}
+'.dialogButtonWrapper':{
+    width: '49.99%',
+}
+'.dialogButton':{
+    color: Alloy.Globals.Color.tabBarButtonFont,
+    backgroundColor: Alloy.Globals.Color.tabBarButtonBackground,
+    backgroundSelectedColor: Alloy.Globals.Color.tabBarButtonSelectedBackground,
+    borderColor: Alloy.Globals.Color.tabBarButtonBorder,
+    borderWidth: '1dp',
+    borderRadius: Alloy.Globals.Layout.buttonBorderRadius,
+    height: '50dp',
+}
+'.dialogTitleView':{
+    backgroundColor: Alloy.Globals.Color.tabBarButtonBackground,
+}
+'.dialogTitleLabel':{
+    color: Alloy.Globals.Color.tabBarButtonFont,
+    left: Alloy.Globals.Layout.globalMarginLeft,
+}
+
+
+/*
+ * TILES
+ */
+'.tile':{
+    top: '1dp',
+}
+
+'.tileContentWrapper':{
+    left:Alloy.Globals.Layout.globalMarginLeft,
+    right: Alloy.Globals.Layout.globalMarginRight,
+    backgroundColor: '#0fff',//transparent
+}
+
+'.tileInput':{
+    hintTextColor: Alloy.Globals.Color.hintFont,
+    color: Alloy.Globals.Color.mainFont,
+    backgroundColor: '#0fff',//transparent
+    width: '100%',
+}
+'.tileTextarea':{
+    hintTextColor: Alloy.Globals.Color.hintFont,
+    color: Alloy.Globals.Color.mainFont,
+    backgroundColor: '#0fff',//transparent
+    height: '150dp',
+}
+'.tileStatusActive': {//focused
+    backgroundColor: Alloy.Globals.Color.tabBarBackground,
+}
+'.tileStatusError': {//error
+    backgroundColor: Alloy.Globals.Color.magenta,
+}
+'.tileSlider':{
+    leftTrackImage: '/images/slider_left.png',
+    rightTrackImage: '/images/slider_right.png',
+    thumbImage: '/images/slider_handle.png',
+}
+'.tileLabel':{
+    color: Alloy.Globals.Color.mainFont,
+}
+
+/*
+ * ANDROID ACTIONBAR
+ */
+"Actionbar[platform=android]": {
+    displayHomeAsUp: true,
+    backgroundImage: "/actionbackground.png"
+}
+"MenuItem[platform=android]": {
+    showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS
+},
+
+
+
+/********************
+ *** MAGIC BUTTON ***
+ ********************/
+'.magicButtonWrapper':{
+	bottom: 0, right: '10dp',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+}
+'.magicButton':{
+	image: '/images/ico_game_menu.png',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+}
+
+
+/*************
+ *** GAMES ***
+ *************/
+'.game-window':{
+	fullscreen: true, // fullscreen
+}
+'.game-window[platform=ios]':{
+	statusBarStyle : Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT, // hide status bar
+}
+'.game-window[platform=android]':{
+    theme: 'Theme.NoActionBar',
+}

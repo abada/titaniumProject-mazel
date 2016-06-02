@@ -1,0 +1,65 @@
+
+/* tabs */
+'.tab':{
+    top: 0,
+    bottom: '90dp',// tabBarButton.height + 2*margin
+    width: Ti.UI.FILL,
+    layout: 'vertical',
+    backgroundColor: '#fff',
+}
+
+/* tab bar */
+'#tabBar':{
+    bottom: 0,
+    width: Ti.UI.FILL,
+    height: Titanium.UI.SIZE,
+    layout: 'vertical',
+}
+
+'#tabBarArrowContainer':{// contains the active tab indicator
+    width: Titanium.UI.FILL,
+    height: Titanium.UI.SIZE,
+}
+
+'#tabBarArrowWrapper':{// wraps the active tab indicator
+    width: Titanium.UI.SIZE,
+    height: Titanium.UI.SIZE,
+}
+
+'#tabBarArrow':{
+    image: '/images/ico_arrow_selector.png',
+    height: Titanium.UI.SIZE,
+    width: Titanium.UI.SIZE,
+}
+
+'#tabBarButtonContainer':{// contains all buttons
+    width: Titanium.UI.FILL,
+    height: Titanium.UI.SIZE,
+    backgroundColor: Alloy.Globals.Color.tabBarBackground,
+    layout: 'horizontal',
+}
+
+'.tabBarButtonWrapper':{// wraps a single button
+    width: '50%',
+    height: Titanium.UI.SIZE,
+    borderWidth: 0,
+    left: 0,
+}
+'.tabBarButtonWrapper[platform=ios]':{// wraps a single button
+    width: '49.99%',
+}
+
+'.tabBarButton':{
+    color: Alloy.Globals.Color.tabBarButtonFont,
+    backgroundColor: Alloy.Globals.Color.tabBarButtonBackground,
+    backgroundSelectedColor: Alloy.Globals.Color.tabBarButtonSelectedBackground,
+    borderColor: Alloy.Globals.Color.tabBarButtonBorder,
+    borderWidth: '1dp',
+    borderRadius: Alloy.Globals.Layout.buttonBorderRadius,
+    height: '50dp',
+}
+
+'.tabBarButtonActive':{
+    color: Alloy.Globals.Color.buttonActiveFont,
+    backgroundColor: Alloy.Globals.Color.tabBarButtonActiveBackground,
+}

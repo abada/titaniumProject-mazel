@@ -1,0 +1,5 @@
+<Alloy>
+    <Window>
+        <HeartbeatAnimation id="hb" module="heartbeat" />
+    </Window>
+</Alloy>

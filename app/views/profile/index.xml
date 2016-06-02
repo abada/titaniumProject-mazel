@@ -1,0 +1,35 @@
+<Alloy>
+    <Window id="win">
+
+        <RightNavButtons platform="ios">
+            <ImageView image="/images/abico_settings.png" onClick="onShowMenuPopover" />
+        </RightNavButtons>
+
+        <OptionDialog platform="ios" id="popoverDialog" title="L('main_settings_dialog_title')" cancel="2" onClick="onSubmenuClick">
+
+            <!-- The Options tag sets the options property. -->
+            <Options>
+                <Option>L('window_title_flirt_preferences')</Option>
+                <Option>L('window_title_settings')</Option>
+                <Option>L('btn_cancel')</Option>
+            </Options>
+
+        </OptionDialog>
+
+        <Widget id="messageArea" src="com.mazel.messageArea" />
+
+        <View class="mainTabTopSeparator" platform="android"/>
+        <ScrollView id="scrollView" class="mainTabScrollview">
+
+            <View id="profileHook" class="verticalWrapper"/>
+
+            <Widget src="com.mazel.tile" contentType="custom" >
+                <Button id="saveButton" module="mazel" onClick="onSaveProfile" title="L('btn_save')"/>
+            </Widget>
+
+        </ScrollView>
+
+        <Widget src="com.mazel.activityIndicator" id="activityIndicator" />
+
+    </Window>
+</Alloy>

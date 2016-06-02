@@ -1,0 +1,12 @@
+<Alloy>
+    <NavigationWindow id="navWin" platform="ios">
+        <Window id="win">   
+          <Require src="login/partials/tabs" />
+        </Window>
+    </NavigationWindow>
+    
+    <Window platform="android" id="win" backgroundColor="cyan">
+          <Require src="login/partials/tabs" />
+    </Window>
+    
+</Alloy>

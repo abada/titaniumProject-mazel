@@ -1,0 +1,5 @@
+'#separator':{
+    height: '1dp',
+    width: Ti.UI.FILL,
+    backgroundColor: Alloy.Globals.Color.tableSeparator,
+}

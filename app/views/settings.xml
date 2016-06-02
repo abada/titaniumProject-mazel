@@ -1,0 +1,36 @@
+<Alloy>
+
+    <Window>
+
+        <ActionBar platform="android" id="actionbar" onHomeIconItemSelected="onCloseWindow" />
+
+        <Widget id="messageArea" src="com.mazel.messageArea" />
+
+        <ScrollView id="scrollView">
+
+            <View id="accountHook" class="verticalWrapper" />
+
+            <Widget src="com.mazel.tile" contentType="custom" >
+                <Button id="saveAccountButton" module="mazel" onClick="onSaveAccount" title="L('btn_save')"/>
+            </Widget>
+
+            <View class="verticalWrapper sectionTitleWrapper mlT">
+                <Label text="L('settings_misc')" class="mLR sectionTitle" />
+                <Label text="L('settings_misc_subtitle')" class="mLR mB sectionTitleSubtitle" />
+            </View>
+            <View class="verticalWrapper">
+                <Widget src="com.mazel.tile" contentType="custom" >
+                    <Button id="logoutButton" module="mazel" onClick="onLogoutUser" title="logout"/>
+                </Widget>
+                <Widget src="com.mazel.tile" contentType="custom" >
+                    <Button id="legalButton" module="mazel" onClick="onOpenLegal" title="legal"/>
+                </Widget>
+            </View>
+
+        </ScrollView>
+
+        <Widget src="com.mazel.activityIndicator" id="activityIndicator" />
+
+       </Window>
+
+</Alloy>

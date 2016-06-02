@@ -1,0 +1,4 @@
+'#view':{
+    layout: 'horizontal',
+    width: Ti.UI.FILL,
+}

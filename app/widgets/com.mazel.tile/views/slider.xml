@@ -1,0 +1,15 @@
+<Alloy>
+    <View id="wrapper">      
+        
+        <View layout="horizontal" visible="false" height="0">
+            <Label id="label" />
+            <Label id="value" />
+        </View>
+        
+        <View height="Ti.UI.SIZE">
+            <Slider id="distanceSlider" class="tileSlider" onChange="onChangeDistanceSlider" onTouchend="onTouchendDistanceSlider"/>
+            <View id="distanceSliderTicks" /> 
+        </View>
+
+    </View>
+</Alloy>

@@ -1,0 +1,10 @@
+<Alloy>
+    <View id="tile" class="tile">
+        <View id="statusBar" class="tileStatusDefault" />
+        <View id="contentWrapper" class="tileContentWrapper">
+            <View id="leftImageWrapper" class="tileLeftImageWrapper"><ImageView id="leftImage" class="tileLeftImage" /></View>        
+            <View id="content" class="tileContent" />
+            <View id="rightImageWrapper" class="tileRightImageWrapper"><ImageView id="rightImage" class="tileRightImage" /></View>  
+        </View>        
+    </View>
+</Alloy>

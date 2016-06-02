@@ -1,0 +1,19 @@
+'Window':{
+    title: L('window_title_signup_profile'),
+}
+
+'ScrollView':{
+    backgroundImage: '/images/bg_signup.jpg'
+}
+
+/* actionbar */
+"MenuItem": {
+    showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS
+},
+"#actionbarSave": {
+    icon: Ti.Android.R.drawable.ic_menu_save
+},
+"#actionbar": {
+    displayHomeAsUp: true,
+}
+

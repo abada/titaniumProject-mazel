@@ -1,0 +1,12 @@
+<Alloy>
+    <Window>
+
+        <ActionBar platform="android" id="actionbar" onHomeIconItemSelected="onCloseWindow" />
+        <Menu platform="android">
+            <MenuItem id="actionbarSave" title="Save" onClick="onSavePreferences" />
+        </Menu>
+
+        <Require id="flirtPreferencesPart" type="view" src="profile/partials/flirtPreferences" onSuccess="onSuccess"/>
+
+    </Window>
+</Alloy>

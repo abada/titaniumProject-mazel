@@ -1,0 +1,20 @@
+{
+	"global": {
+	   "PARSE_API_KEY_PASS": "70361b9a65ccebf4e90d761bb61de0d8",
+	   "PARSE_MASTER_KEY_PASS": "6f0313713fd933e8bf6b18a81fd40030"
+	},
+	"env:development": {},
+	"env:test": {},
+	"env:production": {},
+	"os:android": {},
+	"os:ios": {},
+	"os:mobileweb": {},
+	"os:windows": {},
+	"dependencies": {
+	   "com.mazel.activityIndicator":"0.0.1",
+	   "com.mazel.messageArea":"0.0.1",
+	   "com.mazel.customDialog":"0.0.1",
+	   "com.mazel.tile":"0.0.1",
+	   "com.mazel.multiColumnPicker":"0.0.1"
+	}
+}

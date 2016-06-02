@@ -1,0 +1,22 @@
+'#overlay':{
+    backgroundColor: '#a000',
+    width: Titanium.UI.FILL,
+    height: Titanium.UI.FILL,
+    visible: false,
+    zIndex: 1000,
+}
+'#ai':{
+    style: Ti.UI.ActivityIndicatorStyle.BIG,
+    message: L('loading'),
+    // height: '100dp',
+    // width: '100dp',
+    zIndex: 1000,
+    visible: true,
+    color: '#fff',
+}
+'#ai[platform=android]':{
+    style: Titanium.UI.ActivityIndicatorStyle.BIG,
+}
+'#ai[platform=ios]':{
+    style: Titanium.UI.iPhone.ActivityIndicatorStyle.BIG,
+}

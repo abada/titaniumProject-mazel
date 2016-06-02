@@ -1,0 +1,6 @@
+<Alloy>
+    <View id="wrapper">
+        <TextField id="text" onFocus="onFocus" />
+        <OptionDialog id="options" onClick="onOptionSelected" />
+    </View>
+</Alloy>

@@ -1,0 +1,21 @@
+/*
+ * button for setting pin to map center
+ */
+'#pricklePin': {
+    image: '/images/ico_center.png',
+    visible: false,
+    // backgroundColor: '#8fff',  
+    zIndex: 10,
+    top: '10dp',
+    right: '10dp',
+    width: '40dp',
+    height: '40dp',
+}
+
+
+'#text':{
+    // hintText: L('signup_gender_hint'),
+    editable: false,
+    // width: Titanium.UI.FILL,
+    // focusable: false,
+}

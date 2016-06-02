@@ -1,0 +1,20 @@
+/*
+ * global
+ */
+'Window':{
+    title: L('window_title_flirt_preferences'),
+}
+
+
+
+/* actionbar */
+"MenuItem": {
+    showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS
+},
+"#actionbarSave": {
+    icon: Ti.Android.R.drawable.ic_menu_save
+},
+"#actionbar": {
+    displayHomeAsUp: true,
+}
+

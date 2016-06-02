@@ -1,0 +1,8 @@
+<Alloy>
+   <LeftNavButton>
+      <View onClick="onBeforeClose" layout="horizontal">
+          <ImageView image="/images/ico_arrow_left_white.png" />         
+          <Label class="navButtonLabel" id="label" text="L('back')" />         
+      </View>
+   </LeftNavButton>
+</Alloy>

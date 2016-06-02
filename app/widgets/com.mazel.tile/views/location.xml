@@ -1,0 +1,9 @@
+<Alloy>
+    <View id="wrapper">
+        <TextField id="text" class="tileInput"/>
+        <Widget src="com.mazel.customDialog" id="locationDialog" cancel="0" buttons="btn_cancel,btn_done">
+            <ImageView id="pricklePin" onClick="onPricklePin" />
+            <View id="mapview" module="ti.map" />
+        </Widget>
+    </View>
+</Alloy>

@@ -1,0 +1,13 @@
+/*
+ * global
+ */
+'Window':{
+    title: L('window_title_settings'),
+}
+
+
+/* actionbar */
+"#actionbar": {
+    displayHomeAsUp: true,
+}
+

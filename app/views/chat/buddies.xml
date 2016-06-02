@@ -1,0 +1,24 @@
+<Alloy>
+	<Window>
+
+        <Widget id="messageArea" src="com.mazel.messageArea" />
+
+        <View class="mainTabTopSeparator" platform="android"/>
+        <ScrollView id="scrollView" class="mainTabScrollview">
+            <View class="verticalWrapper" >
+                <View class="verticalWrapper sectionTitleWrapper">
+                    <Label text="L('buddies_list_title')" class="mLR sectionTitle" />
+                    <Label text="L('buddies_list_subtitle')" class="mLR mB sectionTitleSubtitle" />
+                </View>
+                <View class="verticalWrapper" id="buddyList">
+                    <Widget src="com.mazel.tile" contentType="label" text="Carl-Gustav" isButton="true" onClick="onOpenConversation" image="/images/avatar_carl.jpg" />
+                    <Widget src="com.mazel.tile" contentType="label" text="Jens-Thorben" isButton="true" onClick="onOpenConversation" image="/images/avatar_jens.jpg" />
+                </View>
+            </View>
+
+
+        </ScrollView>
+        <Widget src="com.mazel.activityIndicator" id="activityIndicator" />
+
+	</Window>
+</Alloy>

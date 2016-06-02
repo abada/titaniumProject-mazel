@@ -1,0 +1,5 @@
+<Alloy>
+	<Window class="container" id="win">
+		<Label id="label" color="#334">Chat conversation</Label>
+	</Window>
+</Alloy>

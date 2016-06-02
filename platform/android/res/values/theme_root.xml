@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MazelRoot" parent="@style/Theme.AppCompat">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/background</item>
+
+		<!-- AppCompat Compatibility -->
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+		
+        <item name="android:textColorHint">#999</item>
+        
+
+		<!-- splash screen -->
+		<!-- <item name="windowBackground">@drawable/background</item> -->
+	</style>
+		</resources>

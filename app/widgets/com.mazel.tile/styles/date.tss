@@ -1,0 +1,22 @@
+'#wrapper':{
+    height: Titanium.UI.SIZE,
+    layout: 'vertical',
+}
+
+'#dateDialog[platform=android]':{
+    backgroundColor: Alloy.Globals.Color.tabBarBackground,
+}
+
+//TODO style pickerrow https://developer.appcelerator.com/question/161622/pickerrow-color
+'#datePicker':{
+    type: Titanium.UI.PICKER_TYPE_DATE,
+    // visible: false,
+    height: Titanium.UI.SIZE,
+}
+
+'#date':{
+    // hintText: L('signup_gender_hint'),
+    editable: false,
+    // focusable: false,
+    // top: 30,
+}

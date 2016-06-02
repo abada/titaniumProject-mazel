@@ -1,0 +1,4 @@
+'.navButtonLabel':{
+    color: Alloy.Globals.Color.navBarFont,
+}
+

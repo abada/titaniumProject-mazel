@@ -1,0 +1,5 @@
+<Alloy>
+	<Window>
+		<Label id="label1" color="#334">Profile</Label>
+	</Window>
+</Alloy>

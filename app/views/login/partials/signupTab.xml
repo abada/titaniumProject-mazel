@@ -1,0 +1,29 @@
+<Alloy>
+   <!-- <View> -->
+    <ScrollView>
+            <ImageView id="mazelLogo" class="mlT"/>
+
+            <View class="mT verticalWrapper sectionTitleWrapper">
+                <Label text="L('profile_create_account')" class="mLR mB sectionTitle" />
+            </View>
+
+            <View class="verticalWrapper">
+                <!-- FIXME prevent autocorrect and autocapitalization on username fields -->
+                <Widget src="com.mazel.tile" id="signupUsername" contentType="input" autocorrect="false" hint="L('signup_username_hint')" image="/images/ico_user.png" />
+                <Widget src="com.mazel.tile" id="signupMail" contentType="email" autocorrect="false" hint="L('signup_email_hint')" onReturn="onStartSignup" image="/images/ico_email.png" />
+                <Widget src="com.mazel.tile" contentType="custom" height="100dp">
+                    <View class="verticalWrapper">
+                        <Button module="mazel" id="signupStart" onClick="onStartSignup" title="L('btn_signup')"/>
+                        <View class="horizontalWrapper msTB" >
+                            <Label text="L('or')" />
+                        </View>
+                    </View>
+                </Widget>
+                <Widget src="com.mazel.tile" contentType="custom" >
+                    <Button module="mazel" type="facebook" onClick="onStartSignupFacebook" title="L('btn_signup_facebook')" />
+                </Widget>
+            </View>
+
+        </ScrollView>
+        <!-- </View> -->
+</Alloy>

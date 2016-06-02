@@ -1,0 +1,41 @@
+<Alloy>
+    <View class="verticalWrapper">
+        <View class="verticalWrapper sectionTitleWrapper">
+            <Label text="L('profile_full_disclosure_details')" class="mLR sectionTitle" />
+            <Label text="L('profile_full_disclosure_details_subtitle')" class="mLR mB sectionTitleSubtitle" />
+        </View>
+        <View class="verticalWrapper">
+            <View layout="horizontal" height="Ti.UI.SIZE">
+                <View width="49.99%" height="Ti.UI.SIZE">
+                    <Widget src="com.mazel.tile" id="pic" contentType="image" hint="L('signup_pic_hint')" image="/images/ico_camera_big.png" />
+                </View>
+                <View width="49.99%" height="Ti.UI.SIZE">
+                    <Widget src="com.mazel.tile" id="avatar" contentType="avatar" hint="L('signup_avatar_hint')" title="L('signup_avatar_dialog_title')">
+                        <ImageView image="/images/avatar_01.png" />
+                        <ImageView image="/images/avatar_02.png" />
+                        <ImageView image="/images/avatar_03.png" />
+                        <ImageView image="/images/avatar_04.png" />
+                        <ImageView image="/images/avatar_05.png" />
+                        <ImageView image="/images/avatar_06.png" />
+                        <ImageView image="/images/avatar_07.png" />
+                        <ImageView image="/images/avatar_08.png" />
+                        <ImageView image="/images/avatar_09.png" />
+                        <ImageView image="/images/avatar_10.png" />
+                        <ImageView image="/images/avatar_11.png" />
+                        <ImageView image="/images/avatar_12.png" />
+                        <ImageView image="/images/avatar_13.png" />
+                        <ImageView image="/images/avatar_14.png" />
+                        <ImageView image="/images/avatar_15.png" />
+                        <ImageView image="/images/avatar_16.png" />
+                    </Widget>
+                </View>
+            </View>
+            <Widget src="com.mazel.tile" id="quote" contentType="textarea" hint="L('signup_quote_hint')" image="/images/ico_quote.png" />
+            <Widget src="com.mazel.tile" id="firstName" contentType="input" hint="L('signup_firstname_hint')" image="/images/ico_name.png" />
+            <Widget src="com.mazel.tile" id="job" contentType="input" hint="L('signup_job_hint')" image="/images/ico_job.png" />
+            <Widget src="com.mazel.tile" id="gender" contentType="select" title="L('signup_gender_dialog_title')" hint="L('signup_gender_hint')" image="/images/ico_gender_both.png" />
+            <Widget src="com.mazel.tile" id="birthday" contentType="date" title="L('signup_birthday_dialog_title')" hint="L('signup_birthday_hint')" image="/images/ico_birthday.png" />
+            <Widget src="com.mazel.tile" id="location" contentType="location" hint="L('signup_location_hint')" image="/images/ico_pin.png" />
+        </View>
+    </View>
+</Alloy>

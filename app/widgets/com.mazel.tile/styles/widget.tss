@@ -1,0 +1,63 @@
+/* main view */
+'.tile': {
+    backgroundColor: '#dfff',
+    height: '60dp',
+    width: Ti.UI.FILL,
+}
+
+/* status bar */
+'.tileStatusDefault': {
+    left: 0,
+    width: '10dp',
+    height: Ti.UI.FILL,
+}
+'.tileStatusError': {
+    visible: true,
+    backgroundColor: '#ff0b41',
+}
+'.tileStatusActive': {//focused
+    visible: true,
+    backgroundColor: '#333',
+}
+
+/* content wrapper */
+'.tileContentWrapper': {
+    left: '10dp',
+    right: '10dp',
+    height: Ti.UI.FILL,
+    width: Ti.UI.FILL,
+}
+
+/* tile images */
+'.tileLeftImageWrapper': {
+    left: 0,
+    width: '50dp',
+    height: '50dp',
+}
+'.tileLeftImage': {}
+
+'.tileRightImageWrapper': {
+    right: 0,
+    width: '50dp',
+    height: '50dp',
+    visible: false,
+}
+'.tileRightImage': {}
+
+/* main content */
+'.tileContent': {
+    left: '60dp',
+    //right: '60dp',
+    width: Ti.UI.FILL,
+    // width: '100dp',
+    height: Ti.UI.FILL,
+}
+
+
+
+/* type-dependent style */
+'.tileInput': {
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL,
+    backgroundColor: 'yellow',
+}

@@ -1,0 +1,17 @@
+<Alloy>
+
+	<TabGroup id="tabGroup" backgroundColor="white" >
+
+		<Tab id="chatTab" onFocus="onTabFocused">
+			<Require type="view" src="chat/buddies" />
+		</Tab>
+		<Tab id="matchTab" active="true" onFocus="onTabFocused">
+			<Require type="view" src="match/progress" />
+		</Tab>
+		<Tab id="profileTab" onFocus="onTabFocused">
+			<Require id="profile" type="view" src="profile/index" />
+		</Tab>
+
+		<!-- Use the Require tag to include external Ti.UI.Tab views -->
+	</TabGroup>
+</Alloy>

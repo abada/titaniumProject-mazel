@@ -1,0 +1,36 @@
+'#wrapper':{
+    width : Ti.UI.FILL,
+    height: Titanium.UI.SIZE,
+    layout: 'vertical',
+}
+
+'#image': {
+    width : Ti.UI.SIZE,
+    height : Ti.UI.SIZE,
+}
+
+'#label': {    
+    color : Alloy.Globals.Color.hintFont,
+    width : Ti.UI.SIZE,
+    height : Ti.UI.SIZE,
+    top : '5dp',
+}
+
+'ScrollView':{
+    showHorizontalScrollIndicator: false,
+    showVerticalScrollIndicator: true,    
+}
+'ScrollView[platform=android]':{
+    scrollType: 'vertical',
+}
+
+'#avatarWrapper':{
+    layout: 'horizontal',    
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE
+}
+
+'.avatarImage': {    
+    width : '50%',
+    height : Ti.UI.SIZE,
+}

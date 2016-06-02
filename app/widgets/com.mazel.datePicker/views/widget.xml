@@ -1,0 +1,8 @@
+<Alloy>
+    <View id="wrapper">        
+        <TextField id="date" onFocus="onFocus"/>
+        <Widget src="com.mazel.customDialog" id="dateDialog" cancel="0" buttons="btn_cancel,btn_done">
+            <Picker id="datePicker" />
+        </Widget>
+    </View>
+</Alloy>

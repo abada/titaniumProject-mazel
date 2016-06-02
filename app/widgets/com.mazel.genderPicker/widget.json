@@ -1,0 +1,13 @@
+{
+	"id": "com.mazel.genderPicker",
+	"name": "Custom picker for gender options",
+	"description" : "Displays a text input field that opens an option dialog on focus",
+	"author": "Simon Mang",
+	"version": "0.0.1",
+	"copyright":"",
+	"license":"",
+	"min-alloy-version": "1.5",
+	"min-titanium-version":"3.4",
+	"tags":"",
+	"platforms":"ios,android"
+}

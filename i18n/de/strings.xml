@@ -1,0 +1,226 @@
+<resources>
+
+    <!-------------
+    --- GENERAL ---
+    -------------->
+    <!-- for e.g. back buttons -->
+    <string name="back">zurück</string>
+
+    <!-- activity indicator titles -->
+    <string name="loading">lädt...</string>
+    <string name="saving">sichern...</string>
+    <string name="logging_out">abmelden...</string>
+
+    <!-- don't you dare translating the following (except for a future bavarian version were it could be 'massel') -->
+    <string name="mazel">mazel</string>
+
+    <string name="or">oder</string><!-- A or B -->
+
+    <!-------------
+    --- BUTTONS ---
+    -------------->
+    <string name="btn_cancel">abbrechen</string>
+    <string name="btn_ok">ok</string>
+    <string name="btn_done">erledigt</string>
+    <string name="btn_login">einloggen</string>
+    <string name="btn_login_facebook">mit Facebook einloggen</string>
+    <string name="btn_signup">jetzt registrieren</string>
+    <string name="btn_signup_facebook">mit Facebook registrieren</string>
+    <string name="btn_create_account">konto erstellen</string>
+    <string name="btn_save">sichern</string>
+    <string name="btn_password_reset">passwort vergessen...</string>
+    <!-- used in games, indicates start of game -->
+    <string name="btn_play">los</string>
+    <!-- used in flirt tab, helps user to recognize game buttons -->
+    <string name="btn_tap_to_start_game">klicke, um das Spiel zu starten</string>
+
+
+    <!-------------------
+    --- WINDOW TITLES ---
+    -------------------->
+    <string name="window_title_login">Login</string>
+    <string name="window_title_signup">Registrieren</string>
+    <string name="window_title_signup_profile">Registrieren I/II</string>
+    <string name="window_title_signup_flirt_preferences">Registrieren II/II</string>
+    <string name="window_title_profile">Profil</string>
+    <string name="window_title_flirt_preferences">Flirt-Vorlieben</string>
+    <string name="window_title_settings">Einstellungen</string>
+
+    <!-- gender picker row titles -->
+    <string name="female">weiblich</string>
+    <string name="male">männlich</string>
+    <string name="both">beides</string>
+
+    <!-- splash -->
+    <string name="splash_progress_label">lädt...</string><!-- text below splash icon telling that app data is loaded -->
+    <!-- funny texts shown during loading animation on app start -->
+    <string name="splash_loading_message_1" env="dev">tue nichts, lasse dich nur warten... dev</string>
+    <string name="splash_loading_message_1" env="production">tue nichts, lasse dich nur warten... prod</string>
+
+
+    <!---------------
+    --- FLIRT TAB ---
+    ---------------->
+    <string name="flirt_current_match">dein aktueller match</string>
+    <string name="flirt_play_to_reveal_explain">spiele, um mehr Infos zu enthüllen</string>
+    <string name="flirt_one_more_game_explain">nur noch ein spiel...</string>
+    <!-- showed after last reveal, helps user to understand that other can now be found in buddy list -->
+    <string name="flirt_other_is_now_buddy">%s ist nun einer deiner Freunde</string>
+    <!-- reveal overlay title -->
+    <string name="flirt_reveal_overlay_congratulation">Gratulation!</string>
+    <!-- reveal overlay subtitle -->
+    <string name="flirt_reveal_overlay_you_revealed_details">Großartig!
+    	Du hast dir gerade die erste Runde Infos freigespielt!</string>
+    <!-- reveal overlay info labels -->
+    <string name="flirt_reveal_overlay_info_name">Name</string>
+    <string name="flirt_reveal_overlay_info_job">Beruf</string>
+    <string name="flirt_reveal_overlay_info_age">Alter</string>
+    <string name="flirt_reveal_overlay_info_city">Stadt</string>
+    <!-- match overlay search message -->
+    <string name="flirt_match_overlay_searching">Wir durchsuchen die Weltbevölkerung für dich - gib uns ein, zwei Sekunden</string>
+
+    <!-- sign up -->
+    <string name="signup_username_hint">Username, z.B. Grinsekatze</string>
+    <string name="signup_username_not_found">Leider konnten wir den angegebenen Nutzernamen nicht finden. Willst du stattdessen einen Account anlegen?</string>
+    <string name="signup_email_hint">z.B. alice@wonderla.nd</string>
+    <string name="signup_password_hint">Passwort</string>
+    <string name="signup_firstname_hint">Vorname, z.B. Alice</string>
+    <string name="signup_lastname_hint">Nachname, z.B. Wonder</string>
+    <string name="signup_job_hint">Job, z.B. Kindergärtnerin</string>
+    <string name="signup_location_hint">Ort, z.B. London</string>
+    <string name="signup_gender_dialog_title">Wähle dein Geschlecht</string>
+    <string name="signup_gender_hint">Geschlecht</string>
+    <string name="signup_birthday_hint">Geburtstag</string>
+    <string name="signup_birthday_dialog_title">Dein Geburtstag</string>
+    <string name="signup_cancel_preferences_confirm">Deine Flirt-Vorlieben wurden noch nicht gespeichert. Trotzdem weiter?</string>
+    <string name="signup_quote_hint">Was macht dich großartig?</string>
+    <string name="signup_pic_hint">Profilbild</string>
+    <string name="signup_avatar_hint">dein Alter Ego</string>
+    <string name="signup_avatar_dialog_title">Avatar auswählen</string>
+
+    <string name="profile_create_account">Konto erstellen</string>
+    <string name="profile_account_details">Angaben</string>
+    <string name="profile_account_details_subtitle">das wird nie jemand zu sehen bekommen</string>
+    <string name="profile_full_disclosure_details">Enthüllungsdetails</string>
+    <string name="profile_full_disclosure_details_subtitle">…das wird Stück für Stück enthüllt. Ehrlich sein ;)</string>
+    <string name="profile_uploading_pic">Bild wird hochgeladen...</string>
+    <string name="profile_creating_account">Konto wird erstellt...</string>
+
+    <string name="profile_update_successful">Profil erfolgreich aktualisiert</string>
+
+    <string name="preferences_gender_dialog_title">Woran bist du interessiert?</string>
+    <string name="preferences_age_range">Altersgruppe</string>
+    <string name="preferences_flirt_preferences">Flirt-Vorlieben</string>
+    <string name="preferences_flirt_preferences_subtitle">Nach was suchst du?</string>
+    <string name="preferences_distance_hint">Entfernung</string>
+
+    <string name="preferences_update_successful">Flirt-Vorlieben erfolgreich aktualisiert</string>
+
+    <!-- reset password -->
+    <string name="reset_email_dialog_title">Passwort zurücksetzen</string>
+    <string name="reset_email_dialog_text">Bitte sag uns deine E-Mail Adresse, mit der du dich hier angemeldet hast.</string>
+    <string name="reset_email_success">Passwort wurde zurückgesetzt. Alles Weitere erfährst du in der Mail, die wir dir geschickt haben.</string>
+
+    <!-- main -->
+    <string name="main_settings_dialog_title">Was willst du machen?</string>
+
+    <!-- settings -->
+    <string name="settings_misc">Gemischt</string>
+    <string name="settings_misc_subtitle">weiteres</string>
+
+    <!-- map -->
+    <string name="map_user_position">Dein Ort (zum Ändern ziehen)</string>
+    <string name="map_geocoder_loading">Adresse wird geladen...</string><!-- while geocoder tries to resolve address for coordinates -->
+    <string name="map_geocoder_error">Mist, wir haben keine Adresse gefunden.</string>
+
+    <!-- age picker -->
+    <string name="age_picker_title">bevorzugte Altersgruppe</string>
+    <string name="age_picker_from">von</string>
+    <string name="age_picker_to">bis</string>
+    <string name="age_picker_years">Jahre</string>
+
+
+
+
+    <!-- Error messages -->
+    <string name="error_unknown">Unbekannter Fehler</string>
+    <string name="error_not_empty">Darf nicht leer sein.</string>
+    <string name="error_value_not_expected">'%s' wurde nicht erwartet.</string>
+    <string name="error_no_connection">Server nicht gefunden. Funktioniert deine Internetverbindung?</string>
+
+
+    <!-- Parse Errors (from Parse API) -->
+    <string name="parse_error_101">Ungültige Login Parameter</string>
+    <string name="parse_error_125">Ungültige E-Mail Adresse</string>
+
+    <string name="parse_error_200">Username fehlt</string>
+    <string name="parse_error_201">Passwort fehlt</string>
+    <string name="parse_error_202">Der Username '%s' ist schon vergeben</string>
+    <string name="parse_error_203">Für die E-Mail Adresse'%s' wurde bereits ein Konto erstellt</string>
+
+
+    <!-- facebook app id -->
+    <string name="facebook_app_id">435660513286770</string>
+    <string name="facebook_login_loading">Facebook Login wird geladen...</string>
+    <string name="facebook_authentication_success">Facebook Authentifizierung erfolgreich</string>
+    <string name="facebook_no_linked_user_found">Wir konnten leider kein Konto finden, das mit deinem Facebookprofil verbunden ist.</string>
+
+    <!-- buddies -->
+    <string name="buddies_list_title">Deine Matches</string>
+    <string name="buddies_list_subtitle">Tippen, um den Chat zu starten</string>
+
+
+    <!-- GAMES -->
+    <string name="games_player_other">ANDERER</string>
+    <string name="games_player_you">DU</string>
+    <string name="games_summary_overall">GESAMT</string>
+    <string name="games_summary_round">RUNDE</string>
+    <string name="games_summary_other_playing">GEGENSPIELER SPIELT GERADE</string>
+    <string name="games_summary_your_turn">DU BIST DRAN</string>
+
+
+    <!-- MEMORY -->
+
+    <!-- labels on back of memory card -->
+    <string name="memory_tile_back_label_shoesize">erster Freund/Freundin</string>
+    <string name="memory_tile_back_label_bodyheight">Körpergröße</string>
+    <string name="memory_tile_back_label_eyecolor">Augenfarbe</string>
+    <string name="memory_tile_back_label_haircolor">Lieblingsart zu verreisen</string>
+    <string name="memory_tile_back_label_weight">Lieblingsbuch</string>
+    <string name="memory_tile_back_label_nothing">Nichts</string>
+
+    <string name="memory_msg_your_turn">Du bist wieder dran.</string>
+    <string name="memory_msg_cg_playing">Carl-Gustav spielt gerade.</string>
+    <string name="memory_msg_cards_no_match">Schade! Das passt nicht.</string>
+    <string name="memory_msg_cards_already_turned">Du hast bereits zwei Karten umgedreht.</string>
+    <string name="memory_msg_too_slow">Gähn... Zeit ist um. Hör auf zu schlafen!</string>
+
+	<!-- TODO: adjust gender -->
+    <string name="memory_msg_reveal_shoesize">%1$s hatte seine/seinen ersten Freund/Freundin: %2$d.</string><!--shoesize is now "first girlfriend"-->
+    <string name="memory_msg_reveal_bodyheight">%1$s ist %2$dcm groß.</string>
+    <string name="memory_msg_reveal_eyecolor">%1$s hat %2$s Augen.</string>
+    <string name="memory_msg_reveal_haircolor">%1$s’s Lieblingsart zu verreisen ist: %2$s.</string><!--haircolor is now preferred kind of vacation-->
+    <string name="memory_msg_reveal_weight">%1$s’s Lieblingsbuch ist: %2$s.</string><!--weight is now favorite book-->
+
+    <string name="memory_question_explain">Mit Memory erhältst du zusätzliche Info von der anderen Person - und umgekehrt (deswegen darfst du das hier auch ausfüllen). Natürlich nur, wenn du das richtige Paar aufdeckst :)</string>
+    <string name="memory_question_eyecolor">Was ist deine Augenfarbe?</string>
+    <string name="memory_question_shoesize">Wann hattest du deinen ersten Freund/deine erste Freundin?</string>
+    <string name="memory_question_haircolor">Was ist deine Lieblingsart zu verreisen</string>
+    <string name="memory_question_bodysize">Wie groß bist du?</string>
+    <string name="memory_question_weight">Was ist dein Lieblingsbuch?</string>
+
+    <string name="memory_summary_reveal_label_you">Du hast enthüllt:</string>
+    <string name="memory_summary_reveal_label_other">Match hat enthüllt:</string>
+
+    <string name="memory_summary_text_0">Na so wird das aber nix...</string>
+    <string name="memory_summary_text_1">War OK. #läuftteilweise</string>
+    <string name="memory_summary_text_2">Na da schau einer an! Gut gemacht!</string>
+    <string name="memory_summary_text_3">Du hast doch beschissen, oder?! Sehr gut!</string>
+
+    <string name="memory_loading_shuffling_cards">Karten werden gemischt…</string>
+
+    <!-- QUIZ -->
+    <string name="loading_question">Frage lädt…</string>
+    <string name="quiz_header_title_question">FRAGE</string>
+
+</resources>

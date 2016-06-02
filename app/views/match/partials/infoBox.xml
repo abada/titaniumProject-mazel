@@ -1,0 +1,10 @@
+<Alloy>
+    <View id="infoBoxWrapper">
+        <View id="infoBox">
+            <View class="infoBoxLabelWrapper">                
+                <ImageView id="ico" class="infoBoxIco" />
+                <Label id="label" class="infoBoxLabel sectionTitleSubtitle" /> 
+            </View>
+        </View>
+    </View>                    
+</Alloy>

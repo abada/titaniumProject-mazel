@@ -1,0 +1,33 @@
+'#wrapper':{
+    width : Ti.UI.FILL,
+    // height: Titanium.UI.SIZE,
+    // layout: 'vertical',
+    height: Titanium.UI.FILL,
+}
+
+'#distanceSlider':{
+    // top: '10dp',
+    min: 0, 
+    max: 100,
+    value: 50,
+    width: Titanium.UI.FILL,
+    height: Titanium.UI.SIZE,
+    zIndex: 200,    
+    // backgroundColor: '#80f0',
+}
+'#distanceSlider[platform=ios]':{
+    // left: '5dp',
+    // right: '5dp',
+}
+'#distanceSliderTicks':{
+    height: Ti.UI.SIZE,      
+    width: Ti.UI.FILL,    
+    touchEnabled: false, 
+    // bottom: 0,
+    // backgroundColor: '#8f00',
+    top: '10dp'
+}
+'#distanceSliderTicks[platform=android]':{
+    left: '15dp',
+    right: '15dp',
+}

@@ -1,0 +1,10 @@
+0.1.4
+- fixed password <-> birthday mix-up at signup
+- additional loading screens after FB auth
+- fixed translations
+
+
+0.1.3
+- fixed translations
+- fixed fat-fingered spelling mistakes
+- ANDROID fixed app crash after selecting a picture from SD card

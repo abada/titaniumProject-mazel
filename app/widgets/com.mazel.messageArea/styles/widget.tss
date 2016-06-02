@@ -1,0 +1,32 @@
+'#wrapper':{
+    backgroundColor: '#fff',
+    height: Ti.UI.SIZE,
+    width: Ti.UI.FILL,
+    zIndex: 1000,
+    top: 0,
+    visible: false,
+}
+
+'.margin':{
+	top: "10dp",
+	left: "10dp",
+	right: "10dp",
+	bottom: "10dp",
+    height: Ti.UI.SIZE,
+    width: Ti.UI.FILL,
+}
+
+'#icon':{
+	left: 0,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+}
+'#message':{
+    left: '50dp',
+    height: Titanium.UI.SIZE,
+    width: Titanium.UI.FILL,
+	font:{
+        fontSize: '15dp',
+        fontFamily: 'Arapey-Regular',
+    },
+}

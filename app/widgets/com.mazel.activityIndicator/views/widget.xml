@@ -1,0 +1,5 @@
+<Alloy>
+    <View id="overlay">
+        <ActivityIndicator id="ai" />
+    </View>
+</Alloy>

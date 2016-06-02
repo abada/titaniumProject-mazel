@@ -1,0 +1,6 @@
+<Alloy>
+    <View id="wrapper">
+        <TextField id="text" class="tileInput" />
+        <OptionDialog id="options" onClick="onOptionSelected" />
+    </View>
+</Alloy>

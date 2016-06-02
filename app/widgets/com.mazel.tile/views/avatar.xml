@@ -1,0 +1,12 @@
+<Alloy>
+    <View id="wrapper">   
+        <ImageView id="image" />     
+        <Label id="label" />
+        <!-- <Widget src="com.mazel.customDialog" id="avatarDialog" cancel="0" buttons="btn_cancel,btn_done"> -->
+        <Widget src="com.mazel.customDialog" id="avatarDialog">
+            <ScrollView>
+                <View id="avatarWrapper" onClick="onAvatarSelect" />
+            </ScrollView>
+        </Widget>
+    </View>
+</Alloy>

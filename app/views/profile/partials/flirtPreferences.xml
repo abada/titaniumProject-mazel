@@ -1,0 +1,24 @@
+<Alloy>
+    <Widget id="messageArea" src="com.mazel.messageArea" />
+    <ScrollView id="scrollView">
+
+        <View class="verticalWrapper sectionTitleWrapper">
+            <Label text="L('preferences_flirt_preferences')" class="mLR sectionTitle" />
+            <Label text="L('preferences_flirt_preferences_subtitle')" class="mLR mB sectionTitleSubtitle" />
+        </View>
+
+        <View id="mapview" module="ti.map" class=""/>
+        <View class="verticalWrapper">
+            <!-- dummy preventing genderPicker from receiving focus after opening view -->
+            <TextField id="dummy" value="asdf" height="0" class="mLR" />
+            <Widget src="com.mazel.tile" id="distance" contentType="slider" hint="L('preferences_distance_hint')" image="/images/ico_radius.png" onUpdate="onUpdateDistance"/>
+            <Widget src="com.mazel.tile" id="gender" contentType="select"  hint="L('signup_gender_hint')" title="L('preferences_gender_dialog_title')" image="/images/ico_gender_both.png" />
+            <Widget src="com.mazel.tile" id="ageRange" contentType="ageRange" hint="L('preferences_age_range')" title="L('age_picker_title')" image="/images/ico_age_range.png" />
+            <Widget src="com.mazel.tile" contentType="custom" >
+                <Button module="mazel" id="saveButton" onClick="onSavePreferences" title="L('btn_save')"/>
+            </Widget>
+        </View>
+
+    </ScrollView>
+    <Widget src="com.mazel.activityIndicator" id="activityIndicator" />
+</Alloy>

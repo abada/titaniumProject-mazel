@@ -1,0 +1,13 @@
+{
+	"id": "com.mazel.multiColumnPicker",
+	"name": "Picker with multiple columns",
+	"description" : "Creates a fully stylable multi-column picker",
+	"author": "Simon Mang",
+	"version": "0.0.1",
+	"copyright":"",
+	"license":"",
+	"min-alloy-version": "1.5",
+	"min-titanium-version":"3.4",
+	"tags":"",
+	"platforms":"ios,android"
+}

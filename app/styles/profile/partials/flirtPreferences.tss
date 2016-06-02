@@ -1,0 +1,22 @@
+
+'ScrollView':{
+    backgroundImage: '/images/bg_signup.jpg'
+}
+
+/*
+ *
+ */
+'#distance':{
+// TODO globalize (create table in parse with key -> value mapping, add version number, create model for app settings with custom methods to get settings)
+    step: 3, //index of selected step
+    steps: [5, 10, 20, 50, 100, 250, 500, 1000],
+    ticks: [5, 10, 20, 50, 100, 250, 500, 1000],
+}
+
+
+/*
+ * MAP VIEW
+ */
+'#mapview':{
+    width: Ti.UI.FILL,
+}

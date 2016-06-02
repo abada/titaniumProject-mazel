@@ -1,0 +1,8 @@
+<Alloy>
+    <View id="wrapper" onClick="onCloseArea">
+	    <View class="margin">
+	    	<ImageView id="icon" />
+	        <Label id="message" />
+	    </View>
+    </View>
+</Alloy>

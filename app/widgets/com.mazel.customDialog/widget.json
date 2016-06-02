@@ -1,0 +1,13 @@
+{
+	"id": "com.mazel.customDialog",
+	"name": "Dialog with custom content and buttons",
+	"description" : "Opens a modal dialog and displays custom content. For Android an AlertDialog is used while for iOS a modal window is opened.",
+	"author": "Simon Mang",
+	"version": "0.0.1",
+	"copyright":"",
+	"license":"",
+	"min-alloy-version": "1.5",
+	"min-titanium-version":"3.4",
+	"tags":"",
+	"platforms":"ios,android"
+}

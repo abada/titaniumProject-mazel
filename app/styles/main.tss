@@ -1,0 +1,45 @@
+'TabGroup':{
+    exitOnClose: true,
+}
+
+'TabGroup[platform=ios]':{
+    // tintColor: '#8fff',
+    // translucent: false,
+    tabsBackgroundColor: Alloy.Globals.Color.tabBarBackground,
+}
+
+'#actionbarButton[platform=android]':{
+    icon: '/images/abico_dismiss.png',
+    showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS,
+}
+'#actionbarButton1[platform=android]':{
+    visible: false,
+    showAsAction: Ti.Android.SHOW_AS_ACTION_NEVER,
+}
+'#actionbarButton2[platform=android]':{
+    visible: false,
+    showAsAction: Ti.Android.SHOW_AS_ACTION_NEVER,
+}
+
+
+'#chatTab':{
+    icon: '/images/ico_contacts.png',
+}
+'#chatTab[platform=ios]':{
+    activeIcon: '/images/ico_contacts-active.png',
+    activeIconIsMask: false,
+}
+'#matchTab':{
+    icon: '/images/ico_flirt.png',
+}
+'#matchTab[platform=ios]':{
+    activeIcon: '/images/ico_flirt-active.png',
+    activeIconIsMask: false,
+}
+'#profileTab':{
+    icon: '/images/ico_profile.png',
+}
+'#profileTab[platform=ios]':{
+    activeIcon: '/images/ico_profile-active.png',
+    activeIconIsMask: false,
+}

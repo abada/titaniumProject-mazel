@@ -1,0 +1,124 @@
+<Alloy>
+    <Window id="win" onClose="onClose" >
+    	    	
+        <Widget id="messageAreaFlirtTab" src="com.mazel.messageArea" />
+        
+        <RightNavButtons platform="ios">
+            <ImageView image="/images/abico_dismiss.png" onClick="Alloy.Globals.notyet" />
+        </RightNavButtons>
+        
+        <View class="mainTabTopSeparator" platform="android"/>
+        
+        <!-- <ScrollView id="scrollView"> -->
+            
+        <View id="mainView" class="mainTabScrollview" >
+            <View class="verticalWrapper" opacity="0">
+	            <View class="flirtHeaderWrapper verticalWrapper" >
+	                <!-- <View backgroundColor="Alloy.Globals.Color.tabBarBackground" /> -->
+	                
+	                <View id="flirtHeader" class="verticalWrapper" > 
+	                    <View height="Ti.UI.SIZE"> <!-- is used for color overlay over bg image -->
+	                        <View class="avatarWrapper msL" >
+	                            <View id="avatarBorder">
+	                                <View id="avatarBg"></View>
+	                                <ImageView id="avatarImage" image="/images/avatar_03.png" />
+	                            </View>
+	                        </View>
+	                        <View class="verticalWrapper revealTitleWrapper">
+	                            <Label id="revealTitle" text="L('flirt_current_match')" class="msLR sectionTitle"/>
+	                            <Label id="revealSubtitle" text="L('flirt_play_to_reveal_explain')" class="msLR mB sectionTitleSubtitle"/>
+	                        </View>
+	                    </View>
+	                </View>
+	                
+	                <View id="infoBoxWrapper" class="horizontalWrapper" >                    
+	                    <Require id="infoBoxName" type="view" src="match/partials/infoBox" />
+	                    <Require id="infoBoxAge" type="view" src="match/partials/infoBox" />
+	                    <Require id="infoBoxJob" type="view" src="match/partials/infoBox" />
+	                    <Require id="infoBoxLocation" type="view" src="match/partials/infoBox" />
+	                </View>
+	                
+	            </View>
+	            
+	            <View class="gameButtonContainer">     
+		            
+		            <View id="memoryButton" class="gameButtonWrapper">
+			            <View class="gameButton" onClick="onStartMemory">
+			            	<View class="verticalWrapper">
+				                <ImageView image="/images/gamelogo_mame.png" />
+				                <View class="gameButtonSeperator" />
+				                <Label class="gameButtonLabel" text="L('btn_tap_to_start_game')" />
+				            </View>
+				            <ImageView class="gameButtonArrow mR" />
+			            </View>
+		            </View>
+		            
+		            <View id="quizButton" class="gameButtonWrapper">
+			            <View class="gameButton" onClick="onStartQuiz">
+			            	<View class="verticalWrapper">
+				                <ImageView image="/images/gamelogo_maqu.png" />
+				                <View class="gameButtonSeperator" />
+				                <Label class="gameButtonLabel" text="L('btn_tap_to_start_game')" />
+				            </View>  
+				            <ImageView class="gameButtonArrow mR" />  
+			            </View>    
+		            </View>    
+		               	
+		            <View id="chatButton" class="gameButtonWrapper">
+			            <View class="gameButton" onClick="Alloy.Globals.notyet">
+			            	<View class="verticalWrapper">
+				                <ImageView image="/images/ico_chat_big.png" />
+				                <View class="gameButtonSeperator" />
+				                <Label class="gameButtonLabel" text="L('buddies_list_subtitle')" />
+				            </View>
+				            <ImageView class="gameButtonArrow mR" />
+			            </View>
+		            </View>
+	            </View>  
+            </View>  
+                      
+        </View>
+        
+        <!-- in overlays we need to use touchEnabled="false", else on Android click events would be consumed by hidden overlay -->
+        <View id="matchOverlay" touchEnabled="false">
+            <ImageView image="/images/overlay.png" touchEnabled="false" opacity="0" />
+        	<HeartbeatAnimation id="hb1" module="heartbeat" />
+        </View>
+        
+        <!-- in overlays we need to use touchEnabled="false", else on Android click events would be consumed by hidden overlay -->
+        <View id="revealOverlay" onClick="onHideRevealOverlay">        	
+        	<View class="revealOverlayWrapper">
+        		<View class="revealOverlayUnlockIconWrapper">
+		            <ImageView image="/images/ico_lock.png" touchEnabled="false"/>
+        		</View>
+        		<View class="revealOverlayContentContainer">
+        			<View class="mlTB verticalWrapper" touchEnabled="false">
+        				<Label text="L('flirt_reveal_overlay_congratulation')" class="sectionTitle revealOverlayTitle revealOverlayLabel msLR" />
+        				<Label text="L('flirt_reveal_overlay_you_revealed_details')" class="sectionTitleSubtitle revealOverlayLabel msLR" />
+        				<View class="horizontalWrapper mT" touchEnabled="false">
+        					<View class="revealOverlayInfoBox">
+					            <ImageView image="/images/ico_name_inv.png"  touchEnabled="false"/>
+        						<Label text="L('flirt_reveal_overlay_info_name')" class="sectionTitleSubtitle revealOverlayLabel msLR" />
+        					</View>
+        					<View class="revealOverlayInfoBox">
+					            <ImageView image="/images/ico_job_inv.png"  touchEnabled="false"/>
+        						<Label text="L('flirt_reveal_overlay_info_job')" class="sectionTitleSubtitle revealOverlayLabel msLR" />
+        					</View>
+        					<View class="revealOverlayInfoBox">
+					            <ImageView image="/images/ico_birthday_inv.png"  touchEnabled="false"/>
+        						<Label text="L('flirt_reveal_overlay_info_age')" class="sectionTitleSubtitle revealOverlayLabel msLR" />
+        					</View>
+        					<View class="revealOverlayInfoBox">
+					            <ImageView image="/images/ico_pin_inv.png"  touchEnabled="false"/>
+        						<Label text="L('flirt_reveal_overlay_info_city')" class="sectionTitleSubtitle revealOverlayLabel msLR" />
+        					</View>
+        				</View>
+        			</View>
+        		</View>
+        	</View>        	
+        </View>
+            
+        <!-- </ScrollView> -->
+        
+    </Window>
+</Alloy>
